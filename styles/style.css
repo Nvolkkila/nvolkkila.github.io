@@ -32,6 +32,24 @@ header {
   justify-content: center;
 }
 
+.site-logo {
+  width: 180px;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+
+.site-logo img {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  left: -60px;
+  top: -45px;
+  filter: invert(1);
+  mix-blend-mode: screen;
+}
+
 main {
   max-width: 900px;
   margin: 0 auto;
