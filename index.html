@@ -1,69 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-</head>
-<body>
-    <table border=1>
-        <thead>
-        <tr>
-            <th>Joukkue</th>
-            <th>Kapteeni</th>
-            <th>Sarjan voitot</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>HIFK</td>
-            <td>Iiro Pakarinen</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Kärpät</td>
-            <td>Eemil Erholtz</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Pelicans</td>
-            <td>Michal Jordán</td>
-            <td>3</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <td>Voittoja yhteensä:</td>
-            <td colspan="2">5</td>
-        </tr>
-    </tfoot>
-    </table>
-    <br>
-    <form name="palaute"
-    action="http://hh3dlab.fi/formdemo/formhandler.php"
-    method="post">
-
-    <input type="checkbox" id="fruit1" name="fruit1" value="Appelsiini">
-    <label for="fruit1"> Pidän appelsiineista</label><br>
-    <input type="checkbox" id="fruit2" name="fruit2" value="Omena">
-    <label for="fruit2"> Pidän omenoista</label><br>
-    <input type="checkbox" id="fruit3" name="fruit3" value="Banaani">
-    <label for="fruit3"> Pidän banaaneista</label><br> 
-<br>
-<p>Lempi ohjelmointikieli</p>
-    <input type="radio" id="html" name="fav_language" value="HTML">
-    <label for="html">HTML</label><br>
-    <input type="radio" id="css" name="fav_language" value="CSS">
-    <label for="css">CSS</label><br>
-    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-    <label for="javascript">JavaScript</label> 
-<br>
-    <label for="nimi">Nimesi</label> <br>
-    <input type="text" id="name" name="nimi"><br>
-    <label for="viesti">Viestisi palveluun</label><br>
-    <textarea name="viesti" id="message"
-    rows="5" cols="50"></textarea><br><br>
-<input type="submit" value="LÄHETÄ">
-    </form>
-</body>
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tervetuloa | Opiskelijan kaupunkiopas</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Päänavigaatio">
+        <div class="nav-links">
+          <a class="active" href="index.html">Etusivu</a>
+          <a href="tapahtumat.html">Tapahtumat</a>
+          <a href="baarit.html">Baarit</a>
+          <a href="ruokapaikat.html">Ruokapaikat</a>
+          <a href="lahteet.html">Lähteet</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-intro welcome-intro">
+        <p class="label">Tervetuloa opiskelijan kaupunkioppaaseen</p>
+        <h1>Opiskelijoille parhaat<br /><em>tapahtumat ja paikat</em></h1>
+        <p class="lead">
+          Tämä sivu kokoaa opiskelijalle parhaat tapahtumat, baarit ja
+          ruokapaikat yhteen helposti selattavaan oppaaseen.
+        </p>
+        <p>
+          Kun vapaa ilta tuntuu vaikealta hahmottaa, aloita tästä. Löydä illalle
+          sopiva baari, tai rento paikka, jossa saa hyvää ruokaa ja juomaa
+          opiskelijabudjetilla.
+        </p>
+      </section>
+      <section class="welcome-grid">
+        <a href="tapahtumat.html">
+          <h2>Tapahtumat</h2>
+          <p>
+            Keikat, opiskelijabileet ja muut menot, jotta ilta olisi
+            kiinnostava.
+          </p>
+          <strong>Katso tapahtumat -></strong></a
+        >
+        <a href="baarit.html">
+          <h2>Baarit</h2>
+          <p>
+            Rauhalliset illanviettopaikat, tanssilattiat ja opiskelijalle
+            sopivat klassikot.
+          </p>
+          <strong>Katso baarit -></strong></a
+        >
+        <a href="ruokapaikat.html">
+          <h2>Ruokapaikat</h2>
+          <p>Lounaat, iltapalat ja löydöt, joissa hinta-laatusuhde toimii.</p>
+          <strong>Katso ruokapaikat -></strong></a
+        >
+      </section>
+      <section class="welcome-note">
+        <h2>Näin käytät opasta</h2>
+        <p>
+          Sivuston suositukset on koottu opiskelijan näkökulmasta.
+          Lähteet-sivulta näet, mistä tapahtuma- ja paikkatiedot ovat peräisin.
+          Tarkista silti aina ajantasaiset hinnat, aukioloajat ja lipputiedot
+          ennen lähtöä.
+        </p>
+        <p class="notice">
+          <strong>Huomio:</strong> Sivuston suositukset ja arviot ovat
+          henkilökohtaisia mielipiteitä. Tiedot, hinnat, aukioloajat ja
+          tapahtumien järjestelyt voivat muuttua, joten varmista ajantasaiset
+          tiedot aina järjestäjän tai palveluntarjoajan omalta sivulta.
+        </p>
+        <a class="text-link" href="lahteet.html">Tutustu lähteisiin →</a>
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,326 @@
+﻿:root {
+  --bg: #101619;
+  --surface: #182126;
+  --surface-raised: #202c32;
+  --border: #34454c;
+  --text: #edf3f1;
+  --muted: #a8b8b6;
+  --teal: #69e0d0;
+  --amber: #f4bd72;
+  --shadow: rgba(0, 0, 0, 0.28);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Archivo", sans-serif;
+  line-height: 1.5;
+}
+
+a,
+a:visited {
+  color: var(--amber);
+}
+
+header {
+  padding: 20px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+h1 {
+  color: var(--teal);
+  font-size: 48px;
+}
+
+h2 {
+  color: var(--teal);
+  font-size: 28px;
+  text-decoration: underline;
+}
+
+.label {
+  color: var(--teal);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.card-grid,
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card,
+.project-card {
+  flex: 1 1 300px;
+  border: 1px solid var(--border);
+  padding: 20px;
+  background-color: var(--surface);
+  box-shadow: 0 12px 28px var(--shadow);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  display: block;
+  object-fit: cover;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.project-images img {
+  width: 100%;
+}
+
+.nav-links {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links .active,
+.page-intro em,
+.notice strong,
+.text-link,
+.sources span,
+.sources small {
+  color: var(--amber);
+}
+
+.nav-links .active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.page-intro {
+  max-width: 700px;
+  margin: 30px 0 36px;
+}
+
+.page-intro h1 {
+  margin-bottom: 16px;
+}
+
+.page-intro em {
+  font-style: normal;
+}
+
+.welcome-intro {
+  margin-top: 54px;
+}
+
+.welcome-intro p:not(.label) {
+  max-width: 720px;
+}
+
+.welcome-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 44px;
+}
+
+.welcome-grid a {
+  display: block;
+  min-height: 210px;
+  padding: 22px;
+  border-top: 3px solid var(--teal);
+  background: var(--surface);
+  box-shadow: 0 12px 28px var(--shadow);
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.welcome-grid a:hover,
+.sources .source-item:hover {
+  background: var(--surface-raised);
+  transform: translateY(-3px);
+}
+
+.welcome-grid h2 {
+  margin: 22px 0 8px;
+}
+
+.welcome-grid strong {
+  color: var(--teal);
+}
+
+.welcome-grid p {
+  margin-top: 0;
+}
+
+.welcome-note,
+.nice-to-know {
+  max-width: 760px;
+  margin-top: 42px;
+  padding: 28px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: 0 12px 28px var(--shadow);
+}
+
+.welcome-note h2,
+.nice-to-know h2 {
+  margin: 0 0 8px;
+}
+
+.notice {
+  padding: 12px 14px;
+  border-left: 3px solid var(--amber);
+  background: rgba(8, 14, 16, 0.45);
+  font-size: 14px;
+}
+
+.sources {
+  display: grid;
+  gap: 12px;
+  max-width: 760px;
+}
+
+.sources .source-item {
+  display: grid;
+  grid-template-columns: 52px 1fr auto;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--amber);
+  border-radius: 4px;
+  background: var(--surface);
+  box-shadow: 0 8px 20px var(--shadow);
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.sources strong {
+  font-size: 18px;
+}
+
+.nice-to-know p:not(.label) {
+  max-width: 620px;
+}
+
+.featured-kide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 0;
+  border-color: var(--amber);
+  border-top: 4px solid var(--amber);
+  background: var(--surface);
+}
+
+.featured-kide h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.featured-kide p {
+  margin: 0;
+}
+
+.featured-kide .text-link {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.sources-heading {
+  margin: 28px 0 12px;
+  color: var(--teal);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+hr {
+  margin: 44px 0;
+  border: 0;
+  border-top: 2px solid var(--amber);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+}
+
+th,
+td {
+  padding: 14px;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  color: var(--amber);
+  background: var(--surface-raised);
+}
+
+td:first-child {
+  color: var(--amber);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .welcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+
+  .sources .source-item {
+    grid-template-columns: 40px 1fr;
+  }
+
+  .sources small {
+    grid-column: 2;
+  }
+}
